@@ -110,16 +110,13 @@ transform: scale(1.5,1.5);
 /*INDEX*/
 /*Main*/
 #index main{
-    width: 99vw;
-    height: 90vh;
-}
-#index main section {
-    display: inline-block;
-    position: relative;
-    top: 28vh;
-    width:  40vw;
-    height: 10vh;
-    padding: 32px;
+    grid-area:main;
+    padding-top: 24%;
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
     font-size: 120%;
     color:#D5DFEB ;
 }
