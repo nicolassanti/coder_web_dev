@@ -26,8 +26,6 @@ body{
 /*Navigation bar*/
 nav{
     background-color: #D5DFEB;
-    position: sticky;
-    top: 0;
     color:#022873;
     height: 8vh;
     z-index: 10;
