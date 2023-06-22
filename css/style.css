@@ -69,6 +69,15 @@ header nav ul li a:hover{
 header nav ul li a:active{
     color: #BF964B;
 }
+@media screen and (max-width: 480px) {
+ header nav ul{
+    display: flex;
+    flex-direction: column;
+    }
+ header div{
+    margin-left: 24vw;
+ }
+}
 
 /*Footer*/
 footer{
@@ -117,6 +126,7 @@ transform: scale(1.5,1.5);
     "header header"
     "main aside";
 }
+
 #index main{
     grid-area:main;
     padding:24% 4%;
@@ -220,6 +230,70 @@ overflow-y: scroll;
 #cv footer section{
     margin-left: 2vw;
 }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para tablets */   
+    #cv main {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas:
+        "card card"
+        "principal aside"
+        "footer footer";
+    }
+    
+    #cv main #principal {
+      width: 100%;
+    }
+    #cv main #card {
+        margin:1vh auto; ;
+        width: 50vw;
+      }
+    #cv main aside{
+        display: grid;
+        width: 40vw;
+        overflow-y: scroll;
+      }
+    #cv footer{
+        position: fixed;
+        bottom: 0;
+        display: flex;
+
+        margin-left: auto;
+        justify-content: center;
+    }
+    
+  }
+  
+
+@media screen and (max-width: 480px) {
+    /* Estilos para celular */   
+    #cv main {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas:
+        "card"
+        "principal"
+    }
+    
+    #cv main #principal {
+      width: 100%;
+    }
+    #cv main #card {
+        margin:1vh auto; ;
+        width: 80%;
+      }
+    #cv main aside{
+        display: none;
+      }
+    #cv footer{
+        display: none;
+    }
+    
+  }
+  
+
+
 /*--CV--*/
 
 /* PROYECTOS */
