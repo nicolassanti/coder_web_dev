@@ -119,10 +119,10 @@ transform: scale(1.5,1.5);
 }
 #index main{
     grid-area:main;
-    padding-top: 24%;
+    padding:24% 4%;
     display: grid;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
     font-size: 120%;
@@ -139,7 +139,7 @@ transform: scale(1.5,1.5);
 }
 
 #index aside{
-    height: 88vh;
+    height: 94vh;
     overflow: hidden;
     opacity: 0.5;
 }
@@ -155,7 +155,7 @@ transform: scale(1.5,1.5);
 #cv main{
     height: 80vh;
     display: grid;
-    grid-template-columns: 28vw 50vw 28vw; 
+    grid-template-columns: 24vw 54vw 28vw; 
     grid-template-rows: 1fr 1fr 1fr; 
     grid-template-areas: 
     "card principal aside"
@@ -169,7 +169,7 @@ transform: scale(1.5,1.5);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
     background-color: #0583F2;
     border-radius: 8%;
 }
@@ -179,15 +179,6 @@ transform: scale(1.5,1.5);
     height: 16vw;
     object-fit: cover;
 }
-.card h2{
-    padding: 16px;
-    }
-    .card h3{
-        padding: 16px;
-    }
-    .card p{
-    padding: 8px;
-    }
 
 #cv main #descargar{
     border-radius: 16px;
@@ -205,6 +196,18 @@ transform: scale(1.5,1.5);
 #cv main #principal{
     align-self: center;
 }
+#cv main #principal h2{
+    padding: 16px;
+    }
+.principal_descripcion h3{
+        padding: 16px;
+    }
+.principal_descripcion p{
+    padding: 8px;
+    }
+
+
+
 
 #cv main aside {
 grid-area: aside;
