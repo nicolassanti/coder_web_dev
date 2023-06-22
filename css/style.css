@@ -21,12 +21,6 @@ body{
     background: linear-gradient(to right, #414345, #0D0D0D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #D5DFEB;
     font-family:Poppins-Regular;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 12vh 5fr;
-    grid-template-areas: 
-    "header header"
-    "main aside";
 }
 
 /*Navigation bar*/
@@ -34,7 +28,7 @@ header{
     grid-area: header;
     display: grid;
     grid-template-columns: repeat(8,1fr);
-    grid-template-rows:12vh;
+    grid-template-rows:1fr;
     align-self: center;
     background-color: #D5DFEB;
     color:#022873;
@@ -115,6 +109,14 @@ transform: scale(1.5,1.5);
 
 /*INDEX*/
 /*Main*/
+#index{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "header header"
+    "main aside";
+}
 #index main{
     grid-area:main;
     padding-top: 24%;
@@ -149,57 +151,68 @@ transform: scale(1.5,1.5);
 
 
 /*  CV */
+
+#cv main{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 28vw 50vw 28vw; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-areas: 
+    "card principal aside"
+    ". principal aside" 
+    ". . aside"; 
+}
 #cv main #card{
+    margin:8% 0px;
+    padding: 0 2%;
+    grid-area:card;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background-color: #0583F2;
-    width: 16vw;
-    height: 40vh;
-    margin: 2vh 1vw;
     border-radius: 8%;
 }
-#cv main #card img{
-    width: 8vw;
-    height: 16vh;
-    margin: 2vh 4vw;
+#cv main section#card img{
     border-radius: 50%;
+    width: 16vw;
+    height: 16vw;
     object-fit: cover;
 }
+.card h2{
+    padding: 16px;
+    }
+    .card h3{
+        padding: 16px;
+    }
+    .card p{
+    padding: 8px;
+    }
+
 #cv main #descargar{
-    border-radius: 20px;
-    width: 16vw;
-    height: 4vh;
-    margin: 16vh 0;
+    border-radius: 16px;
+    padding: 8px;
+    margin-top: 32%;
     background-color: #BF964B;
     color:#D5DFEB;
 }
-#cv #card p{
-    margin: 1vh 2vw;
-}
-#cv main section {
-    color: red;
-}
-#cv main #principal {
-    margin:2vh 4vw;
-    width:50vw;
+
+#cv main section#principal {
+    grid-area:principal;
+    align-self: self-start;
+    padding: 4% 8%;
 }
 #cv main #principal{
-    text-align: center;
-    margin:2vh 4vw;
+    align-self: center;
 }
-.card h2{
-padding: 16px;
-}
-.card h3{
-    padding: 16px;
-}
-.card p{
-padding: 8px;
-}
+
 #cv main aside {
+grid-area: aside;
 background-color:aliceblue;
-height: 90vh;
+height: 94vh;
 width: 20vw;
 color: #414345;
-padding: 1vh 2vw;
+padding: 2vh 1vw;
 overflow-y: scroll;
 }
 #cv main aside p{
