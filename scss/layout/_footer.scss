@@ -1,0 +1,23 @@
+footer{
+    position: fixed;
+    bottom: 1vh;    
+    section{
+        display: inline-block;
+        vertical-align: center;
+        margin-left: 10vw;
+    }
+    .social-media{
+        width: 100vw;
+    }
+    .social-media{
+        img{
+            background-color: #D5DFEB;
+            border-radius:50%;
+            width: 2vw;
+            margin-left: 8px;
+            &:hover{
+                transform: scale(1.5,1.5);
+            }
+        }  
+    } 
+}

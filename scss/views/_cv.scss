@@ -1,0 +1,132 @@
+#cv {
+    main{
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 24vw 54vw 28vw; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-areas: 
+        "card principal aside"
+        ". principal aside" 
+        ". . aside"; 
+
+        #card{
+            margin:8% 0px;
+            padding: 0 2%;
+            grid-area:card;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            background-color:$color-secundario;
+            border-radius: 8%;
+            
+            img{
+                border-radius: 50%;
+                width: 16vw;
+                height: 16vw;
+                object-fit: cover;
+            }
+            #descargar{
+                border-radius: 16px;
+                padding: 8px;
+                margin-top: 32%;
+                background-color: #BF964B;
+                color:#D5DFEB;
+            }
+        }
+
+        #principal {
+            color: $color-texto;
+            font-size: 150%;
+            grid-area:principal;
+            align-self: center;
+            padding: 4% 8%;
+            h2{
+                padding: 16px;
+            }
+            .principal_descripcion h3{
+                padding: 16px;
+            }
+            .principal_descripcion p{
+                padding: 8px;
+            }
+        }
+        aside {
+            grid-area: aside;
+            background-color:aliceblue;
+            height: 94vh;
+            width: 20vw;
+            color: $color-gradiente_claro;
+            padding: 2vh 1vw;
+            overflow-y: scroll;
+
+            p{
+                margin: 2vh 1vw;
+            }
+
+            }
+
+
+
+    }
+    footer{
+        section{
+            margin-left: 2vw;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para tablets */   
+    #cv {
+        main {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto auto auto;
+          grid-template-areas:
+            "card card"
+            "principal aside"
+            "footer footer";
+            #card {
+                margin:1vh auto; ;
+                width: 50vw;
+              }
+            #principal {
+                width: 100%;
+              }
+            aside{
+            display: grid;
+            width: 40vw;
+            overflow-y: scroll;
+            }
+        }
+        footer{
+            display: none;
+        }        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Estilos para celular */   
+    #cv main {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas:
+        "card"
+        "principal";
+        #card {
+            margin:1vh auto; ;
+            width: 80%;
+          }
+        #principal {
+            width: 100%;
+          }
+        aside{
+        display: none;
+        }
+    }
+    footer{
+        display: none;
+    }
+}
+
+  

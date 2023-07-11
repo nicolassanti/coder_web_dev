@@ -1,0 +1,14 @@
+@import './base/reset.css';
+@import './base/typos';
+@import './utilities/variables';
+@import './layout/body';
+@import './layout/header';
+@import './layout/footer';
+
+
+@import './views/index';
+@import './views/cv';
+@import './views/proyectos';
+@import './views/recursos';
+@import './views/contacto';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

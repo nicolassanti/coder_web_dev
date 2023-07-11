@@ -1,0 +1,68 @@
+#index{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "header header"
+    "main aside";
+    main{
+        grid-area:main;
+        padding:24% 4%;
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        font-size: 180%;
+        color:$color-texto ;
+        height: 92vh;
+        p:first-child{
+            align-self: flex-end;
+            padding: 4vh 0;
+            font-weight: 800;
+            font-size: 180%;
+        }
+        p:nth-child(2){
+            align-self: flex-start;
+        }
+    }
+    aside{
+        height: 92vh;
+        overflow: hidden;
+        background: linear-gradient($color-fondo,18%,rgba(255, 255, 255, 0.2));
+        img{
+            opacity: 0.5;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos para celulares y tablets*/   
+    #index{
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas:
+        "header"
+        "main"
+        "aside";
+        main {
+            width: 100%;
+            height: 50vh;
+            z-index: 10;
+          }
+        aside{
+            width: 100%;
+            height: 40vh;
+            opacity: 0.3;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+        }
+        footer{
+            display: none;
+        }
+    }  
+  }
+  
