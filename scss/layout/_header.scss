@@ -6,7 +6,7 @@ header{
     align-self: center;
     background: linear-gradient($color-texto,90%, $color-gradiente_oscuro);
     color:$color-enlace;
-    height: 8vh;
+    height: $header-height;
     
     div{
         display: flex;

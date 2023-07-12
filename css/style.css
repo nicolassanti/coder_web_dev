@@ -16,12 +16,12 @@
   font-family: Poppins-Light;
   src: url(../../fonts/Poppins-Light.ttf);
 }
-body {
+html, body {
   background: #0D0D0D; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #232526, #0D0D0D); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #414345, #0D0D0D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #D5DFEB;
-  font-family: Poppins-Regular;
+  font-family: Poppins-Light;
 }
 
 header {
@@ -32,7 +32,7 @@ header {
   align-self: center;
   background: linear-gradient(#D5DFEB, 90%, #232526);
   color: #022873;
-  height: 8vh;
+  height: 10vh;
 }
 header div {
   display: flex;
@@ -137,7 +137,7 @@ footer .social-media img:hover {
   grid-template-rows: 1fr 2fr;
   font-size: 180%;
   color: #D5DFEB;
-  height: 92vh;
+  height: 90vh;
 }
 #index main p:first-child {
   align-self: flex-end;
@@ -149,7 +149,7 @@ footer .social-media img:hover {
   align-self: flex-start;
 }
 #index aside {
-  height: 92vh;
+  height: 90vh;
   overflow: hidden;
   background: linear-gradient(#0D0D0D, 18%, rgba(255, 255, 255, 0.2));
 }
@@ -184,28 +184,34 @@ footer .social-media img:hover {
   }
 }
 #cv main {
-  height: 80vh;
+  height: 90vh;
   display: grid;
   grid-template-columns: 24vw 54vw 28vw;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "card principal aside" ". principal aside" ". . aside";
 }
 #cv main #card {
-  margin: 8% 0px;
-  padding: 0 2%;
+  margin: 8% 8%;
+  padding: 2% 2%;
   grid-area: card;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #0583F2;
+  background-color: #045faf;
   border-radius: 8%;
 }
-#cv main #card img {
+#cv main #card div img {
+  background: radial-gradient(rgba(255, 255, 255, 0.2), #045faf);
   border-radius: 50%;
-  width: 16vw;
-  height: 16vw;
+  width: 12vw;
+  height: 12vw;
   object-fit: cover;
+}
+#cv main #card p {
+  font-family: Poppins-Light;
+  margin-top: 2rem;
+  font-size: 160%;
 }
 #cv main #card #descargar {
   border-radius: 16px;
@@ -215,29 +221,41 @@ footer .social-media img:hover {
   color: #D5DFEB;
 }
 #cv main #principal {
+  font-family: Poppins-Regular;
   color: #D5DFEB;
   font-size: 150%;
   grid-area: principal;
-  align-self: center;
   padding: 4% 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: justify;
 }
 #cv main #principal h2, #cv main #principal .h2 {
-  padding: 16px;
+  align-self: calc(center-8vw);
+  padding: 16px 0px;
 }
 #cv main #principal .principal_descripcion h3, #cv main #principal .principal_descripcion .h3 {
-  padding: 16px;
+  padding: 16px 0px;
 }
 #cv main #principal .principal_descripcion p {
-  padding: 8px;
+  padding: 8px 0px;
 }
 #cv main aside {
+  font-size: 120%;
+  font-family: Poppins-Light;
   grid-area: aside;
-  background-color: aliceblue;
-  height: 94vh;
-  width: 20vw;
+  background: linear-gradient(#232526, 0.8%, #D5DFEB);
+  width: 22vw;
   color: #414345;
   padding: 2vh 1vw;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: justify;
+}
+#cv main aside h2, #cv main aside .h2, #cv main aside h3, #cv main aside .h3 {
+  align-self: center;
+  padding: 0.8rem 0;
 }
 #cv main aside p {
   margin: 2vh 1vw;

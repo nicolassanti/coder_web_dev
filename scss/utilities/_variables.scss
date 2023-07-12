@@ -5,5 +5,9 @@ $color-gradiente_oscuro: #232526;       // Color de fondo general
 $color-fondo: #0D0D0D;       // Color de fondo general
 $color-texto: #D5DFEB;       // Color de texto principal
 $color-enlace: #022873;      // Color de enlaces o hipervínculos
-$color-secundario: #0583F2;       // Color secundario
+$color-secundario: #045faf;       // Color secundario
+
+
+$header-height: 10vh;
+$main-section-height: calc(100vh - $header-height);
 

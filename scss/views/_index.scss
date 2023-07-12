@@ -15,7 +15,7 @@
         grid-template-rows: 1fr 2fr;
         font-size: 180%;
         color:$color-texto ;
-        height: 92vh;
+        height: $main-section-height;
         p:first-child{
             align-self: flex-end;
             padding: 4vh 0;
@@ -27,7 +27,7 @@
         }
     }
     aside{
-        height: 92vh;
+        height: $main-section-height;
         overflow: hidden;
         background: linear-gradient($color-fondo,18%,rgba(255, 255, 255, 0.2));
         img{
