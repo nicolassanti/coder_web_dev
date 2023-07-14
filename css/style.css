@@ -12216,10 +12216,19 @@ footer .social-media img:hover {
     margin-left: 1.5rem;
   }
 }
+#recursos main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80vw;
+  height: 40vh;
+  margin: 2vh 10vw;
+  border-radius: 8%;
+}
 #recursos main .cards {
   display: flex;
   flex-direction: column;
   background-color: #D5DFEB;
+  color: #045faf;
   width: 32vw;
   min-width: 28vw;
   height: 40vh;
@@ -12244,6 +12253,23 @@ footer .social-media img:hover {
   margin: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  #recursos main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #recursos main .cards {
+    display: flex;
+    flex-direction: column;
+    background-color: #D5DFEB;
+    width: 80vw;
+    min-width: 28vw;
+    height: 40vh;
+    margin: 2vh 1vw;
+    padding: 0;
+    border-radius: 40px;
+  }
+}
 #contacto main {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;

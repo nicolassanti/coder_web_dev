@@ -1,9 +1,16 @@
 #recursos {
     main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80vw;
+        height: 40vh;
+        margin: 2vh 10vw;
+        border-radius: 8%;
         .cards{
             display: flex;
             flex-direction: column;
-            background-color: #D5DFEB;
+            background-color: $color-texto;
+            color: $color-secundario;
             width: 32vw;
             min-width: 28vw;
             height: 40vh;
@@ -31,4 +38,25 @@
             margin:0;
         }
     } 
+}
+
+@media only screen and (max-width: 768px){
+
+    #recursos {
+        main{
+        display: grid;
+        grid-template-columns:1fr;
+        .cards{
+            display: flex;
+            flex-direction: column;
+            background-color: $color-texto;
+            width: 80vw;
+            min-width: 28vw;
+            height: 40vh;
+            margin: 2vh 1vw;
+            padding: 0;
+            border-radius: 40px;
+            }
+       }
+    }
 }
