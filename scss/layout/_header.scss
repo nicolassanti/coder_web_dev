@@ -1,13 +1,9 @@
 header{
     grid-area: header;
     display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows:1fr;
-    align-self: center;
-    background: linear-gradient($color-texto,90%, $color-gradiente_oscuro);
     color:$color-enlace;
     height: $header-height;
-    
+
     div{
         display: flex;
         width: 24vw;
@@ -21,24 +17,14 @@ header{
     }
 
     nav{
-        margin-left: 16vw;       
-        ul{
-            display: flex;
-            justify-content: space-between;
-            width: 50vw;
-            text-align: right;
-            
-            li{
-                display: inline-block;
-                list-style: none;   
-                padding: 2% 1%;
-                text-align: right;
-                vertical-align: middle;
-                &:hover{
-                    transform: scale(1.2,1.2);
-                }
+        div{            
+            div{
+                display: flex;
+                align-content:space-around ;
                 a{
-                    font-size: 180%;
+                    padding: 0 2px;
+                    transition: transform 0.6s;
+                    font-size: 140%!important;
                     &:link {
                         text-decoration: none;
                         color:$color-fondo
@@ -47,6 +33,7 @@ header{
                         color: $color-enlace
                     }
                     &:hover{
+                        transform: scale(1.2,1.2);
                         color: $color-fondo;
                     }
                     &:active{
@@ -58,25 +45,3 @@ header{
         }
     } 
 }
-
-
-@media screen and (max-width: 480px) {
-    header{
-        height: 22vh;
-        nav{
-            margin-left: 0;   
-            ul{
-               display: flex;
-               flex-direction: column;
-               }  
-        }
-        div{
-            margin-left: 8vw;
-            p{
-                font-size: 280%;
-                padding: 4vh;
-            }
-        }
-    } 
-   }
-   

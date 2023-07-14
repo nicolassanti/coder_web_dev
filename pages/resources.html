@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Portfolio desarrollador web Nicolás Santi. En este sitio se puede visualizar mi experiencia laboral, cursos, algunos proyectos realizados y recursos de aprendizaje gratuitos de canales de youtube conocidos.">
+    <meta name="keywords" content="developer, web, frontend, desarrollo, web, programador, hoja de vida, cv">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recursos</title>
@@ -9,42 +11,55 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body id="recursos">
-    <header>
-        <div><p><strong> Nicolás Santi</strong></p></div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./cv.html">Sobre mí</a></li>
-                <li><a href="./projects.html">Proyectos</a></li>
-                <li><a href="./contact.html">Contacto</a></li>
-                <li><a href="./resources.html"><strong>Recursos</strong></a></li>
-            </ul>
+    <header class="bg-body">
+        <nav class="navbar navbar-expand-md fs-6 d-flex">
+            <div class="container-fluid bg-body z-3">
+                <a class="navbar-brand fs-1 m-2 mt-2" href="#"><strong> Nicolás Santi</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navresources" aria-controls="navresources" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" collapse navbar-collapse justify-content-between" id="navresources">
+                    <div class="navbar-nav fs-5">
+                        <a class="col-md-5 nav-link z-3" href="../index.html">Inicio</a>
+                        <a class="col-md-5 nav-link z-3" href="./cv.html">Sobre mí</a>
+                        <a class="col-md-5 nav-link z-3 active" href="./projects.html">Proyectos</a>
+                        <a class="col-md-5 nav-link z-3" href="./contact.html">Contacto</a>
+                        <a class="col-md-5 nav-link z-3" href="./resources.html"><strong>Recursos</strong></a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
-        <main>
-        <div class="card">
-            <iframe class="iframe" src="https://www.youtube.com/embed/7iobxzd_2wY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p>Curso React - Midudev</p>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 cards">
+                <iframe class="iframe" src="https://www.youtube.com/embed/7iobxzd_2wY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Curso React - Midudev</p>
+            </div>
+            <div class="col-md-12 col-sm-12 cards">
+                <iframe class="iframe" src="https://www.youtube.com/embed/BdhprtWjlY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Typescript - Victor Robles</p>
+            </div>
         </div>
-        <div class="card">
-            <iframe class="iframe" src="https://www.youtube.com/embed/BdhprtWjlY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p>Typescript - Victor Robles</p>
+        <div class="row">
+            <div class="col cards">
+                <iframe class="iframe" src="https://www.youtube.com/embed/CV_Uf3Dq-EU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Docker - Pelado Nerd</p>
+            </div>
+            <div class="col cards">
+                <iframe class="iframe" src="https://www.youtube.com/embed/ygA5U7Wgsg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Javascript - Sacha Lifszyc</p>
+            </div>
         </div>
-        <div class="card">
-            <iframe class="iframe" src="https://www.youtube.com/embed/CV_Uf3Dq-EU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p>Docker - Pelado Nerd</p>
-        </div>
-        <div class="card">
-            <iframe class="iframe" src="https://www.youtube.com/embed/ygA5U7Wgsg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p>Javascript - Sacha Lifszyc</p>
-        </div>
-        <div class="card">
-            <iframe class="iframe" src="https://www.youtube.com/embed/rr2H086z16s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p>HTML y CSS - Bluuweb</p>
-        </div>
-        <div class="card">
-            <iframe class="iframe" src="https://www.youtube.com/embed/PW_A-lOpVV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p>GIT y GitHub- Bluuweb</p>
+        <div class="row">
+            <div class="col cards">
+                <iframe class="iframe" src="https://www.youtube.com/embed/rr2H086z16s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>HTML y CSS - Bluuweb</p>
+            </div>
+            <div class="col cards">
+                <iframe class="iframe" src="https://www.youtube.com/embed/PW_A-lOpVV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>GIT y GitHub- Bluuweb</p>
+            </div>
         </div>
     </main>
     <footer>
@@ -56,7 +71,6 @@
         </section>
     </footer>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Portfolio desarrollador web Nicolás Santi. En este sitio se puede visualizar mi experiencia laboral, cursos, algunos proyectos realizados y recursos de aprendizaje gratuitos de canales de youtube conocidos.">
+    <meta name="keywords" content="developer, web, frontend, desarrollo, web, programador, hoja de vida, cv">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos</title>
@@ -10,37 +12,45 @@
 </head>
 <body id="proyectos">
     <header>
-        <div><p><strong> Nicolás Santi</strong></p></div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./cv.html">Sobre mí</a></li>
-                <li><a href="./projects.html"><strong>Proyectos</strong></a></li>
-                <li><a href="./contact.html">Contacto</a></li>
-                <li><a href="./resources.html">Recursos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md fs-6 d-flex">
+            <div class="container-fluid bg-body z-3">
+                <div class="navbar-brand fs-1 m-2 mt-2" href="#"><strong> Nicolás Santi</strong></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navprojects" aria-controls="navprojects" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" collapse navbar-collapse justify-content-between" id="navprojects">
+                    <div class="navbar-nav fs-5">
+                        <a class="col-md-5 nav-link" href="../index.html">Inicio</a>
+                        <a class="col-md-5 nav-link" href="./cv.html">Sobre mí</a>
+                        <a class="col-md-5 nav-link active" href="./projects.html"><strong>Proyectos</strong></a>
+                        <a class="col-md-5 nav-link" href="./contact.html">Contacto</a>
+                        <a class="col-md-5 nav-link" href="./resources.html">Recursos</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <div class="card">
-            <img src="../images/proyecto1.jpg" alt="imagen ilustrativa de una aplicacion web" srcset="">
+            <img src="../images/capset.jpeg" alt="imagen ilustrativa de una aplicacion web" srcset="">
             <div>
-                <h3>Nombre de la aplicación 1</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nobis rem eligendi obcaecati omnis soluta rerum, sit, dicta sint ab, voluptatem consequatur.</p>    
+                <h3>Capset</h3>
+                <p>Sistema GIS de registro y visualización de mediciones de nivel de señal de equipos celulares.
+                    </p>    
             </div>
         </div>
         <div class="card">
-            <img src="../images/proyecto2.jpg" alt="imagen ilustrativa de una aplicacion web" srcset="">
+            <img src="../images/netmanager.jpeg " alt="imagen ilustrativa de una aplicacion web" srcset="">
             <div>
-                <h3>Nombre de la aplicación 2</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nobis rem eligendi obcaecati omnis soluta rerum, sit, dicta sint ab, voluptatem consequatur.</p>    
+                <h3>Net Manager</h3>
+                <p>Tablero de conexión de equipo de red, que organiza los distintos sitios o nodos de red para mejorar la accesibilidad, con listado de equipos desplegable, que permite accesoa la gestión web.</p>    
             </div>
         </div>
         <div class="card">
-            <img src="../images/proyecto3.jpg" alt="imagen ilustrativa de una aplicacion web" srcset="">
+            <img src="../images/hasar.jpg" alt="imagen ilustrativa de una aplicacion web" srcset="">
             <div>
-                <h3>Nombre de la aplicación 3</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nobis rem eligendi obcaecati omnis soluta rerum, sit, dicta sint ab, voluptatem consequatur.</p>    
+                <h3>Hasar</h3>
+                <p>Desarrollo de los módulos de Login, Carga de usuarios y Productos, de un sistema ERP. Desallo con stack MERN.</p>    
             </div>
         </div>
     </main>
@@ -53,7 +63,6 @@
         </section>
     </footer>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

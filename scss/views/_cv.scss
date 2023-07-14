@@ -17,7 +17,7 @@
             flex-direction: column;
             align-items: center;
             justify-content:center;
-            background-color:$color-secundario;
+            background-color:$color-texto;
             border-radius: 8%;
             div{
                 img{
@@ -32,13 +32,15 @@
                 font-family: Poppins-Light;
                 margin-top: 2rem;
                 font-size: 160% ;
+                font-weight: 600;
+                color: $color-gradiente_oscuro;
             }
             
             #descargar{
                 border-radius: 16px;
                 padding: 8px;
                 margin-top: 32%;
-                background-color: $color-primario;
+                background-color: $color-secundario;
                 color:$color-texto;
             }
         }
