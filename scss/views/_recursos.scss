@@ -9,8 +9,8 @@
         .cards{
             display: flex;
             flex-direction: column;
-            background-color: $color-texto;
-            color: $color-secundario;
+            background-color: map-get($tema_normal , color-texto);
+            color: map-get($tema_normal , color-secundario);
             width: 32vw;
             min-width: 28vw;
             height: 40vh;
@@ -49,7 +49,7 @@
         .cards{
             display: flex;
             flex-direction: column;
-            background-color: $color-texto;
+            background-color: map-get($tema_normal , color-texto);
             width: 80vw;
             min-width: 28vw;
             height: 40vh;

@@ -6,7 +6,7 @@
         .card{
             display: flex;
             flex-direction: row;
-            background-color: $color-texto;
+            background-color: map-get($tema_normal , color-texto);
             width: 80vw;
             height: 40vh;
             margin: 2vh 6vw;

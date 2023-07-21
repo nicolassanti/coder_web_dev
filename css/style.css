@@ -11981,7 +11981,8 @@ footer .social-media img:hover {
   align-items: center;
   justify-content: space-between;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: "";
   font-size: 180%;
   color: #D5DFEB;
   height: 90vh;

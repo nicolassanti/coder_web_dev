@@ -2,13 +2,9 @@
     main{
         height: $main-section-height;
         display: grid;
-        grid-template-columns: 24vw 54vw 28vw; 
-        grid-template-rows: 1fr 1fr 1fr; 
-        grid-template-areas: 
-        "card principal aside"
+        @include grid_config(24vw 54vw 28vw,1fr 1fr 1fr,"card principal aside"
         ". principal aside" 
-        ". . aside"; 
-
+        ". . aside");
         #card{
             margin:8% 8%;
             padding: 2% 2%;
@@ -17,11 +13,11 @@
             flex-direction: column;
             align-items: center;
             justify-content:center;
-            background-color:$color-texto;
+            background-color:map-get($tema_normal , color-texto);
             border-radius: 8%;
             div{
                 img{
-                    background: radial-gradient(rgba(255, 255, 255, 0.2), $color-secundario);
+                    background: radial-gradient(rgba(255, 255, 255, 0.2), map-get($tema_normal , color-secundario));
                     border-radius: 50%;
                     width: 12vw;
                     height: 12vw;
@@ -33,21 +29,21 @@
                 margin-top: 2rem;
                 font-size: 160% ;
                 font-weight: 600;
-                color: $color-gradiente_oscuro;
+                color: map-get($tema_normal , color-gradiente_oscuro);
             }
             
             #descargar{
                 border-radius: 16px;
                 padding: 8px;
                 margin-top: 32%;
-                background-color: $color-secundario;
-                color:$color-texto;
+                background-color: map-get($tema_normal , color-secundario);
+                color:map-get($tema_normal , color-texto);
             }
         }
 
         #principal {
             font-family: Poppins-Regular;
-            color: $color-texto;
+            color: map-get($tema_normal , color-texto);
             font-size: 150%;
             grid-area:principal;
             padding: 4% 8%;
@@ -69,9 +65,9 @@
             font-size: 120%;
             font-family: Poppins-Light;
             grid-area: aside;
-            background:linear-gradient($color-gradiente_oscuro,0.8%,$color-texto);
+            background:linear-gradient(map-get($tema_normal , color-gradiente_oscuro),0.8%,map-get($tema_normal , color-texto));
             width: 22vw;
-            color: $color-gradiente_claro;
+            color: map-get($tema_normal , color-gradiente_claro);
             padding: 2vh 1vw;
             overflow-y: scroll;
             display: flex;

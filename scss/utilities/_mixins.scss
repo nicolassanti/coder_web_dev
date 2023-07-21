@@ -1,0 +1,5 @@
+@mixin grid_config($gtcol,$gtrow,$gtarea){
+    grid-template-columns:$gtcol;
+    grid-template-rows: $gtrow;
+    grid-template-areas:$gtarea;
+}

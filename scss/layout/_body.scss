@@ -1,8 +1,8 @@
 
 body{
-    background: $color-fondo;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, $color-gradiente_oscuro, $color-fondo);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, $color-gradiente_claro, $color-fondo); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: $color-texto;
+    background: map-get($tema_normal , color-fondo );  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,map-get($tema_normal , color-gradiente_oscuro), map-get($tema_normal , color-fondo));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, map-get($tema_normal , color-gradiente_claro),map-get($tema_normal , color-fondo)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: map-get($tema_normal , color-texto);
     font-family:Poppins-Light;
 }

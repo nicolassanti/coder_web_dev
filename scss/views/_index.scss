@@ -1,20 +1,15 @@
 #index{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: 
-    "header header"
-    "main aside";
+    @include grid_config(1fr 2fr,auto 1fr,"header header""main aside");
     main{
         grid-area:main;
         padding:24% 4%;
         display: grid;
         align-items: center;
         justify-content: space-between;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
+        @include grid_config(1fr,1fr 2fr 1fr,"");
         font-size: 180%;
-        color:$color-texto ;
+        color:map-get($tema_normal,color-texto);
         height: $main-section-height;
         p:first-child{
             align-self: flex-end;
@@ -29,7 +24,7 @@
     aside{
         height: $main-section-height;
         overflow: hidden;
-        background: linear-gradient($color-fondo,18%,rgba(255, 255, 255, 0.2));
+        background: linear-gradient(map-get($tema_normal , color-fondo),18%,rgba(255, 255, 255, 0.2));
         img{
             opacity: 0.5;
             height: 100%;
@@ -38,15 +33,11 @@
     }
 }
 
+
 @media screen and (max-width: 768px) {
     /* Estilos para celulares y tablets*/   
     #index{
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto;
-      grid-template-areas:
-        "header"
-        "main"
-        "aside";
+    @include grid_config(1fr, auto auto auto,"header""main""aside");
         main {
             width: 100%;
             height: 50vh;
@@ -63,5 +54,5 @@
             display: none;
         }
     }  
-  }
+}
   

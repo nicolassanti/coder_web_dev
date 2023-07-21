@@ -1,7 +1,7 @@
 header{
     grid-area: header;
     display: grid;
-    color:$color-enlace;
+    color:map-get($tema_normal , color-enlace);
     height: $header-height;
 
     div{
@@ -27,17 +27,17 @@ header{
                     font-size: 140%!important;
                     &:link {
                         text-decoration: none;
-                        color:$color-fondo
+                        color:map-get($tema_normal , color-fondo)
                     }
                     &:visited {
-                        color: $color-enlace
+                        color: map-get($tema_normal , color-enlace)
                     }
                     &:hover{
                         transform: scale(1.2,1.2);
-                        color: $color-fondo;
+                        color: map-get($tema_normal , color-fondo);
                     }
                     &:active{
-                        color: $color-primario;
+                        color: map-get($tema_normal , color-primario)               
                     }
                 }
                  
