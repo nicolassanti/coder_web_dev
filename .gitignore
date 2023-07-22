@@ -1,0 +1,5 @@
+#ignoro carpeta node_modules.
+node_modules/
+
+#ignoro capeta sass
+scss/

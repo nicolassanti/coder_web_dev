@@ -41,12 +41,13 @@
         <section id="formulario_contacto">
             <h4>CONTACTAME</h4>
             <form action="#">
-                <label for="">Tu nombre:</label>
-                <input type="text">
-                <label for="">Tu email:</label>
-                <input type="text">
-                <label for="">Comentarios:</label>
-                <textarea rows="4" cols="50"></textarea>
+                <label for="nombre" name="nombre">Tu nombre:</label>
+                <input type="text" required name="nombre">
+                <label for="email" name="email">Tu email:</label>
+                <input type="email" name="nombre" required>
+                <label for="comentarios" name="comentarios">Comentarios:</label>
+                <textarea rows="3" cols="50"></textarea>
+                <input type="submit" value="Enviar" class="btn btn-block btn-secondary">
             </form>
         </section>
     </main>
