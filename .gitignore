@@ -1,5 +1,9 @@
-#ignoro carpeta node_modules.
+#ignoro carpeta de dependencias.
 node_modules/
 
-#ignoro capeta sass
+#ignoro capeta de sass
 scss/
+
+#ignoro archivos de node locales
+package.json
+package-lock.json
